@@ -21,6 +21,7 @@ O carro detecta obstáculos a sua frente por meio de um sensor ultrassônico HC-
 | 28BYJ-48 | 1 | Motor de Passos | ![STEPMOTOR](resources/stepmotor.png) |
 | Motor DC | 2 | Motor 3V-6V | ![DCMOTOR](resources/dcmotor.png) |
 | HC-SR04 | 1 | Sensor Ultrassônico | ![HCSR04](resources/hcsr04.png) |
+| IR Sensor | 2 | Sensor Infravermelho Reflexivo | ![IRSENSOR](resources/irsensor.png) |
 
 
 
