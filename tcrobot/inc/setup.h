@@ -1,5 +1,7 @@
-// TRACK CLEANER ROBOT SETUP LIBRARY
-// DESCRIPTION: This library is used to setup basic pins at system startup
+/**
+ * TRACK CLEANER ROBOT SETUP LIBRARY
+ * DESCRIPTION: This library is used to setup basic pins at system startup
+ */
 
 #include <stdio.h>
 #include <stdlib.h>
