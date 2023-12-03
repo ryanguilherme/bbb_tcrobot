@@ -4,14 +4,14 @@ void set_pwm_duty_cycle(const char* pwm_path, int pwm_duty_cycle) {
     strcat(pwm_path, "/duty_cycle");
     int pwm_fd = open(pwm_path, O_WRONLY);
     if (pwm_fd == -1) {
-        perror("Failed to open PWM file");
+        perror("Failed to open PWM duty cycle file");
         exit(EXIT_FAILURE);
     }
 
     char pwm_string[16];
     int pwm_string_length = snprintf(pwm_string, sizeof(pwm_string), "%d", pwm_duty_cycle);
     if (write(pwm_fd, pwm_string, pwm_string_length) == -1) {
-        perror("Failed to set PWM value");
+        perror("Failed to set PWM duty cycle");
         exit(EXIT_FAILURE);
     }
 
@@ -22,7 +22,7 @@ void set_pwm_period(const char* pwm_path, int pwm_period) {
     strcat(pwm_path, "/period");
     int pwm_fd = open(pwm_path, O_WRONLY);
     if (pwm_fd == -1) {
-        perror("Failed to open PWM file");
+        perror("Failed to open PWM period file");
         exit(EXIT_FAILURE);
     }
 
