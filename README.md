@@ -1,6 +1,6 @@
 # Robô Limpador de Trilhos - BeagleBone Black
 
-![Base](resources/SCHEMATIC.png)
+![SCHEMATIC](resources/SCHEMATIC.png)
 
 Este projeto implementa um robô que consiste em um braço robótico acoplado à um carro que segue uma trilha, ambos controlados pela placa BeagleBone Black. Quando avistado um obstáculo, é estabelecida uma distância e então realizados movimentos pré-definidos para tentar remover esse obstáculo, caso não seja possível, é emitido um alerta em um servidor WEB local que está rodando em uma Raspberry Pi Pico solicitando controle manual remoto por este servidor. Caso a remoção seja possível, é emitido um LOG no servidor com a data e o local.
 
@@ -14,14 +14,16 @@ O carro detecta obstáculos a sua frente por meio de um sensor ultrassônico HC-
 
 ## Componentes
 | Componente | Quantidade | Descrição | Imagem |
-| ---------- | ---------- | --------- | ------ |
-| BeagleBone Black | 1 | Plataforma de Desenvolvimento | ![BBB](resources/bbb.png) | 
-| Raspberry Pi Pico W | 1 | Plataforma de Desenvolvimento | ![RPIPICO](resources/rpipico.png) |
-| SG90 | 4 | Servo Motor | ![SG90](resources/sg90.png) |
-| 28BYJ-48 | 1 | Motor de Passos | ![STEPMOTOR](resources/stepmotor.png) |
-| Motor DC | 2 | Motor 3V-6V | ![DCMOTOR](resources/dcmotor.png) |
-| HC-SR04 | 1 | Sensor Ultrassônico | ![HCSR04](resources/hcsr04.png) |
-| IR Sensor | 2 | Sensor Infravermelho Reflexivo | ![IRSENSOR](resources/irsensor.png) |
+| ---------- |------------| --------- | ------ |
+| BeagleBone Black | 1          | Plataforma de Desenvolvimento | ![BBB](resources/bbb.png) | 
+| Raspberry Pi Pico W | 1          | Plataforma de Desenvolvimento | ![RPIPICO](resources/rpipico.png) |
+| SG90 | 4          | Servo Motor | ![SG90](resources/sg90.png) |
+| 28BYJ-48 | 1          | Motor de Passos | ![STEPMOTOR](resources/stepmotor.png) |
+| Motor DC | 2          | Motor 3V-6V | ![DCMOTOR](resources/dcmotor.png) |
+| HC-SR04 | 1          | Sensor Ultrassônico | ![HCSR04](resources/hcsr04.png) |
+| IR Sensor | 3          | Sensor Infravermelho Reflexivo | ![IRSENSOR](resources/irsensor.png) |
+| L298N | 1          | Ponte H | ![L298N](resources/l298n.png)|
+| Buzzer | 1 | Gerador de sinais sonoros | ![BUZZER](resources/buzzer.png) |
 
 
 
@@ -30,11 +32,13 @@ O carro detecta obstáculos a sua frente por meio de um sensor ultrassônico HC-
 O projeto está organizado da seguinte forma:
 
 ```
-/
-├── 
-└── 
+tcrobot/
+├── inc/             # Arquivos de cabeçalho (.h)
+├── obj/             # Objetos compilados (.o)
+└── src/             # Arquivos de código fonte (.c)
+│ Makefile           # Arquivo de compilação
 resources/           # Recursos (mídia) do projeto
-│   └── 
+│   └── base.png     # Arquitetura base do projeto (pinos)
 README.md            # Documentação do projeto (você está aqui)
 ```
 
