@@ -18,7 +18,7 @@
  * @param pwm_path, pwm_value
  * @return void
  */
-void set_pwm_duty_cycle(const char* pwm_path, int pwm_duty_cycle);
+void set_pwm_duty_cycle(char* pwm_path, int pwm_duty_cycle);
 void set_pwm_period(const char* pwm_path, int pwm_period);
 
 #endif //BBB_TCROBOT_PWM_H
