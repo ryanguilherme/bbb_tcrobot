@@ -17,8 +17,8 @@
 #define CENTER_SENSOR_PATH "/sys/class/gpio/gpio72/value"
 
 // DC MOTORS
-#define LEFT_MOTOR_PWM_PATH "/sys/class/pwm/pwmchip0/pwm0"
-#define RIGHT_MOTOR_PWM_PATH "/sys/class/pwm/pwmchip0/pwm1"
+#define LEFT_MOTOR_PWM_PATH "/sys/class/pwm/pwmchip5/pwm0"
+#define RIGHT_MOTOR_PWM_PATH "/sys/class/pwm/pwmchip5/pwm1"
 
 #define PWM_PERIOD 200000 // WHEELs DC MOTORS PWM (5 KHz)
 
