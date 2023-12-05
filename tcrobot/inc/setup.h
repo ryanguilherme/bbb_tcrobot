@@ -12,6 +12,8 @@
 #ifndef BBB_TCROBOT_SETUP_H
 #define BBB_TCROBOT_SETUP_H
 
+void setup_pinmux(char pin[], char mode[]);
 void export_gpio(int gpio_number);
+void export_pwms();
 
 #endif //BBB_TCROBOT_SETUP_H
