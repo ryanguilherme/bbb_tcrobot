@@ -19,7 +19,7 @@
  * @param file_path
  * @return file_value
  */
-int read_file(const char* file_path);
+int read_file(char* file_path);
 void write_file(char path[256], int value);
 
 #endif //BBB_TCROBOT_FILE_H

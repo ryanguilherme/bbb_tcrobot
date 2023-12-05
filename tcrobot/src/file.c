@@ -1,6 +1,6 @@
 #include "../inc/file.h"
 
-int read_file(const char* file_path) {
+int read_file(char* file_path) {
     int fd = open(file_path, O_RDONLY);
     if (fd == -1) {
         perror("Failed to open file");
