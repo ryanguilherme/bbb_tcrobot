@@ -12,6 +12,7 @@
 #include <unistd.h>
 #include <string.h>
 
+
 /**
  * @name set_pwm_duty_cycle
  * @details Modifies a pwm duty cycle based on it's system path
@@ -19,6 +20,8 @@
  * @return void
  */
 void set_pwm_duty_cycle(char* pwm_path, int pwm_duty_cycle);
-void set_pwm_period(const char* pwm_path, int pwm_period);
+void set_pwm_period(char* pwm_path, int pwm_period);
+char* get_pwm_path(char pin[]);
+void enable_pwm(char pin[]);
 
 #endif //BBB_TCROBOT_PWM_H
