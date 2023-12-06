@@ -32,7 +32,7 @@
 #define P9_14_MUX               "/sys/devices/platform/ocp/ocp:P9_14_pinmux/state"
 #define P9_16_MUX               "/sys/devices/platform/ocp/ocp:P9_16_pinmux/state"
 
-#define OBSTACLE          "/sys/class/gpio/gpio74/value"
+#define OBSTACLE                "/sys/class/gpio/gpio74/value"
 
 void move_forward() {
     int fd;
@@ -367,7 +367,11 @@ int main() {
         if(rs_value == '1') {printf("RIGHT: BLACK\n");}
         else         {printf("RIGHT: WHITE\n");}
 
-        if ((ls_value == '0') && (ms_value == '1') && (rs_value == '0')) {
+        if (obstacle == '1') {
+            move_nowhere();
+            printf("OBSTACLE DETECTED!\n");
+        }
+        else if ((ls_value == '0') && (ms_value == '1') && (rs_value == '0')) {
             move_forward();
         }
         else if (((ls_value == '1') && (ms_value == '1') && (rs_value == '0')) || ((ls_value == '1') && (ms_value == '0') && (rs_value == '0'))) {
