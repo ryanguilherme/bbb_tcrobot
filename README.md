@@ -62,6 +62,38 @@ Este projeto foi desenvolvido como o projeto final da disciplina TPSE II (Técni
 
 Contribuições são bem-vindas! Se você encontrar problemas, bugs ou tiver sugestões de melhorias, fique à vontade para abrir uma issue ou enviar um pull request neste repositório.
 
+## Resultados
+
+### Etapa de desenvolvimento:
+
+<div align="center">
+    <img src="resources/car.png"></img>
+
+**Montagem inicial do TCRobot**
+</div>
+
+<div align="center">
+    <img src="resources/car.gif" alt="Car Gif"></img>
+
+**Primeiros Movimentos**      
+</div>
+
+### Resultado final do projeto:
+
+<div align="center">
+    <img src="resources/final.png"></img>
+    
+**Montagem final do TCRobot**
+</div>
+
+<div align="center">
+    <img src="resources/final.gif" alt="Final Gif"></img>
+
+**Removendo obstáculos**
+</div>
+
+
+
 ## Licença
 
 Este projeto está licenciado sob a [MIT License](LICENSE).
