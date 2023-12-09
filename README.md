@@ -73,11 +73,10 @@ Contribuições são bem-vindas! Se você encontrar problemas, bugs ou tiver sug
 </div>
 
 <div align="center">
-    <video src="resources/car.mp4" controls title="Title"></video>
+    <img src="resources/car.gif" alt="Car Gif"></img>
 
-**Primeiros Movimentos**    
+**Primeiros Movimentos**      
 </div>
-
 
 ### Resultado final do projeto:
 
@@ -88,7 +87,7 @@ Contribuições são bem-vindas! Se você encontrar problemas, bugs ou tiver sug
 </div>
 
 <div align="center">
-    <video src="resources/final.mp4" controls title="Title"></video>
+    <img src="resources/final.gif" alt="Final Gif"></img>
 
 **Removendo obstáculos**
 </div>
