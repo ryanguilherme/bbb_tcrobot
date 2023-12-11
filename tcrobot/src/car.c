@@ -711,20 +711,6 @@ void move_car(){
             move_nowhere();
             printf("OBSTACLE DETECTED!\n");
             mov1();
-            // usleep(2000000);
-    
-            // fd = open(OBSTACLE, O_RDONLY);
-            // if (fd < 0) {
-            // printf("Error opening obstacle value file\n");
-            //     return;
-            // }
-            // read(fd, &obstacle, 1);
-            // close(fd);
-
-            // if (obstacle == '1') {
-            //     mov2();
-            //     usleep(1000000);
-            // }
         }
         else if ((ls_value == '0') && (ms_value == '1') && (rs_value == '0')) {
             move_forward();
