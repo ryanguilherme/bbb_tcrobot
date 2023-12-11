@@ -358,7 +358,7 @@ void move_bra(int angle, char *path){
 }
 
 //Função para mover o  motor de passos com a quantidade indicada de passos no sentido indicado
-void stepp_motor(int passos, int in){ 
+void stepp_motor(int passos, int in){
     set_gpio_value(66, 0);
     set_gpio_value(67, 1);
     set_gpio_value(69, 1);
@@ -727,15 +727,20 @@ void move_car(){
     }
 }
 
-int main() {
-    configure_car();
-    setup_arm();
-
+void uln2003_setup() {
     set_gpio_value(66, 0);
     set_gpio_value(67, 1);
     set_gpio_value(69, 1);
     set_gpio_value(68, 0);
+}
 
+int main() {
+    /** PINS AND PERIODS SETUP **/
+    configure_car();
+    setup_arm();
+    uln2003_setup();
+
+    /** MAIN PROGRAM **/
     move_car();
 }
 
