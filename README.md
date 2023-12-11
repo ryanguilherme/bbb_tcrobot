@@ -23,6 +23,7 @@ O carro detecta obstáculos a sua frente por meio de um sensor ultrassônico HC-
 | HC-SR04 | 1          | Sensor Ultrassônico | ![HCSR04](resources/hcsr04.png) |
 | IR Sensor | 3          | Sensor Infravermelho Reflexivo | ![IRSENSOR](resources/irsensor.png) |
 | L298N | 1          | Ponte H | ![L298N](resources/l298n.png)|
+| ULN2003 | 1 | Modulo para motor de passos | ![ULN2003](resources/uln2003.png) |
 | Buzzer | 1 | Gerador de sinais sonoros | ![BUZZER](resources/buzzer.png) |
 
 
